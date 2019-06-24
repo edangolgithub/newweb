@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // properties  field state element 
+        // behaviour  function method action
+//     class car
+//     {
+//    char type[50];
+//    char model[50];
+//    char color[50];
+//    char* display()
+//      {
+//         return strcat(type,model);
+//      }
+
+
+//     }
+  //  int main()
+  //    {
+//         car cars;
+//         cars.type="fiat"; // strcpy(cars.type,"fiat")
+//         cars.model="500"; 
+//         cars.color="white";
+//         cars.display();     
+  //    }
+
+
+
+        var car = {
+            type: "Fiat",
+            model: "500",
+            color: "white",
+            display :function()
+            {
+              return "type : "+this.type+" "+"model : "+this.model;
+            },
+            display1:function()
+            {
+                document.write(this.color);
+            }
+        };
+
+ car.display1();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

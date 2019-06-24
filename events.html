@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+
+    function print()
+    {
+        document.write("hello");
+    }
+    function changecolor()
+    {
+        document.getElementsByTagName("body")[0].style.backgroundColor="red";
+    }
+    function changecolor2()
+    {
+        document.getElementsByTagName("body")[0].style.backgroundColor="white";
+    }
+    function abc()
+    {
+           document.getElementById("t").style.backgroundColor="yellow";
+    }
+    function abc1()
+    {
+           document.getElementById("t").style.backgroundColor="white";
+    }
+    function start()
+    {
+        alert("page loaded");
+    }
+    </script>
+</head>
+<body onload="start()">
+    <p onclick="print()" onmouseover="changecolor()" onmouseout="changecolor2()" >paragraph</p>
+
+<input type="text" id="t" onfocus="abc()" onblur="abc1()" >
+
+</body>
+</html>
