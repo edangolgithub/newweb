@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#b1').click(function () {
+
+                $('#x').fadeOut().fadeIn().hide(5000).fadeIn();
+              
+
+
+            })
+            $('#b2').click(function () {
+
+             $('P').fadeIn(5000);
+
+
+})
+$("#b3").click(function(){
+    $('p').fadeToggle(2000)
+})
+
+$('#b4').click(function(){
+    $('#x').stop();
+})
+        })
+    </script>
+
+</head>
+
+<body>
+    <button id="b1">click</button>
+    <button id="b2">click</button>
+    <button id="b3">click</button>
+    <button id="b4">stop</button>
+    <p id="x">paragraph</p>
+</body>
+
+</html>
